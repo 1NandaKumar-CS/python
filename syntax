@@ -1,0 +1,60 @@
+# Solve the quadratic equation ax**2 + bx + c = 0
+
+# import complex math module
+import math
+
+a = 1
+b = 5
+c = 6
+
+#avg
+sum = (a+b+c)/3
+print("avg =",sum)
+
+# calculate the discriminant
+d = (b**2) - (4*a*c)
+
+# find two solutions
+sol1 = (-b-math.sqrt(d))/(2*a)
+sol2 = (-b+math.sqrt(d))/(2*a)
+
+print('The solution are {0} and {1}',sol1,sol2)
+
+#natural nos
+i=0
+while i<10 :
+    i = i+1;
+    print(i)
+
+#largest
+print("\nthe largest no is")
+if(a>b and a>c):
+    print(a)
+elif(b>a and b>c):
+    print(b)
+elif(c>a and c>b):
+    print(c)
+    
+    
+    
+    
+    
+my_list = []
+
+for _ in range(3):
+    try:
+        my_list.append(int(input('Enter a number: ')))
+    except ValueError:
+        print('The provided value is not an integer')
+
+
+print(my_list)
+
+sum = 0
+i=0
+
+while i<=2 :
+    sum = my_list[i] + sum
+    i = i+1
+    
+print("\nsum =",sum)
